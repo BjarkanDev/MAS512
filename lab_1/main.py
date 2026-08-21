@@ -112,8 +112,8 @@ print("Read Image Shape:", img_read.shape)
 print("Pixel value at (100, 50):", img_read[99, 49])  # 0-indexed bounds
 
 # Q7
-img_leaf = cv.imread("practice_raw_image.png")
-img_leaf_gray = cv.imread("practice_raw_image.png", cv.IMREAD_GRAYSCALE)
+img_leaf = cv.imread("practice_raw_image.PNG")
+img_leaf_gray = cv.imread("practice_raw_image.PNG", cv.IMREAD_GRAYSCALE)
 
 # Plot Color vs Gray
 fig, ax = plt.subplots(1, 2, figsize=(10, 4))
