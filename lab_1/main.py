@@ -2,6 +2,7 @@ import numpy as np
 import skimage
 import cv2 as cv
 import matplotlib.pyplot as plt
+import pandas as pd
 
 #Q1
 
@@ -70,3 +71,37 @@ print(eigenvectors)
 determinant = np.linalg.det(matrix) # Alternative is multiplying all eigenvalues together
 print("Determinant:")
 print(determinant)
+
+# Q5
+
+path = "Heart Attack.csv"
+data = pd.read_csv(path)
+print("Data Info:")
+data.info()
+
+# All except last column
+X = data.loc[:, data.columns != data.columns[-1]].values
+print("Features (X):")
+print(X)
+
+# Last column
+Y = data.iloc[:, -1].values
+print("Target (Y):")
+print(Y)
+
+# Normalize X (x - mean) / std
+X_norm = (X - np.mean(X, axis=0)) / np.std(X, axis=0)
+print("Normalized Features (X_norm):")
+print(X_norm)
+
+# Covariance of data_norm
+data_cov = np.cov(X_norm, rowvar=False)
+print("Covariance Matrix of Normalized Features:")
+print(data_cov)
+
+# Distance ij - dot product of col i with all other columns of x
+dist_ij = np.dot(X_norm.T, X_norm)
+print("Distance Matrix (dot product of normalized features):")
+print(dist_ij)
+
+# 
