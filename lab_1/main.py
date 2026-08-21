@@ -40,7 +40,8 @@ print("Eigenvalues:\n", eigenvalues)
 print("Eigenvectors:\n", eigenvectors)
 print("Determinant:", determinant)
 
-# Q5# 1. Load Data
+# Q5
+# 1. Load Data
 data = pd.read_csv("Heart Attack.csv")
 X = data.iloc[:, :-1].values
 y = data.iloc[:, -1].values
@@ -110,7 +111,7 @@ img_read = cv.imread("synthetic_img.png", cv.IMREAD_GRAYSCALE)
 print("Read Image Shape:", img_read.shape)
 print("Pixel value at (100, 50):", img_read[99, 49])  # 0-indexed bounds
 
-# Q7: Edge Detection
+# Q7
 img_leaf = cv.imread("practice_raw_image.png")
 img_leaf_gray = cv.imread("practice_raw_image.png", cv.IMREAD_GRAYSCALE)
 
@@ -141,9 +142,7 @@ ax[1].imshow(sobel_custom, cmap='gray')
 ax[1].set_title("Sobel (Custom Kernel)")
 plt.show()
 
-# ==========================================
-# Q8: Image Filtering & Noise
-# ==========================================
+# Q8
 # (a) Gaussian Standard Lib
 blur_lib = cv.GaussianBlur(img_leaf_gray, (5, 5), 1)
 
@@ -174,9 +173,7 @@ axes[1, 1].set_title("Custom Blur")
 plt.tight_layout()
 plt.show()
 
-# ==========================================
-# Q9: Fourier Transformation & Filtering
-# ==========================================
+# Q9
 # 1D Fourier Signal Analysis
 t = np.linspace(0, 1, 1000, endpoint=False)
 sig1 = 5 * np.sin(2 * np.pi * 100 * t)
@@ -226,9 +223,7 @@ axes[4].set_title("LPF Image")
 plt.tight_layout()
 plt.show()
 
-# ==========================================
-# Q10: Optical Flow (Farneback Method)
-# ==========================================
+#Q10
 cap = cv.VideoCapture("20250828_130534.mp4")
 ret, first_frame = cap.read()
 
