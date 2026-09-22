@@ -1,0 +1,8 @@
+path:
+
+train: images/train
+val: images/train
+test: images/test
+
+names: 
+  0: box
