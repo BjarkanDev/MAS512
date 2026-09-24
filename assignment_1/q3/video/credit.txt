@@ -1,0 +1,3 @@
+Credit for video example used for segmentation and detection goes to Muhammad Jamnas (https://www.youtube.com/@muhammedjamnas2604)
+
+Link to original YouTube video: https://www.youtube.com/watch?v=ORrrKXGx2SE
