@@ -1,8 +1,10 @@
-path:
+path: C:\Users\bjorn\mas512\assignment_1\q1\dataset
 
 train: images/train
-val: images/train
-test: images/test
+val: images/val
+# test: images/test
+
+nc: 1
 
 names: 
   0: box

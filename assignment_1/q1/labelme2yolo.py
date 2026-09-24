@@ -1,3 +1,6 @@
+# Quick script to convert Labelme JSON annotations to YOLO format
+# Produced entirely by Gemini, only for conversion of Labelme JSON to YOLO format.
+
 import json
 import os
 import glob
