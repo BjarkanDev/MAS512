@@ -10,8 +10,9 @@ Repository documentation and setup instructions.
 | `.gitattributes` | Git LFS and repository attribute rules. |
 | `.gitignore` | Files and directories excluded from Git. |
 | `README.md` | Project documentation and setup instructions. |
-
-Directories outside of these are project specific such ass assignments or labs
+| `assignment_1/` | Assignment 1 directory. |
+| `lab_1/` | Lab 1 directory. |
+| `lab_2/` | Lab 2 directory. |
 
 ## Clone or import the repository
 
