@@ -11,8 +11,7 @@ Repository documentation and setup instructions.
 | `.gitignore` | Files and directories excluded from Git. |
 | `README.md` | Project documentation and setup instructions. |
 
-
-The repository may not contain every optional directory above. Add new top-level directories to this table when they are introduced.
+Directories outside of these are project specific such ass assignments or labs
 
 ## Clone or import the repository
 
